@@ -6,6 +6,12 @@
   "scripts": {
     "lint": "standard"
   },
+  "contributors": [
+    {
+      "name": "j-kizeno",
+      "email": "julianquiceno20@gmail.com"
+    }
+  ],
   "maintainers": [
     {
       "name": "mateoreparaz",
