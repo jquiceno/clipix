@@ -1,6 +1,6 @@
 {
   "name": "clipix",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Clipix, an nice image editor for the terminal created in Nodejs ",
   "main": "index.js",
   "scripts": {
