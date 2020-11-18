@@ -1,0 +1,19 @@
+{
+  "name": "clipix",
+  "version": "0.0.1",
+  "description": "Clipix, an nice image editor for the terminal created in Nodejs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "sharp"
+  ],
+  "author": "jquiceno <loncuster@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^6.2.0",
+    "emojic": "^1.1.16"
+  }
+}
