@@ -1,11 +1,21 @@
 {
   "name": "clipix",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Clipix, an nice image editor for the terminal created in Nodejs ",
   "main": "index.js",
   "scripts": {
     "lint": "standard"
   },
+  "maintainers": [
+    {
+      "name": "mateoreparaz",
+      "email": "mateoreparaz1989@gmail.com"
+    },
+    {
+      "name": "alejandro-benitez",
+      "email": "alejandrobenitezramos@gmail.com"
+    }
+  ],
   "keywords": [
     "cli",
     "sharp"
