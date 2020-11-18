@@ -10,6 +10,10 @@ const fs = require('fs').promises
 const Image = require('../src/lib/image')
 const compress = require('../src/commands/compress')
 const config = require('../src/commands/config')
+const updateNotifier = require('update-notifier')
+const pkg = require('../package.json')
+
+const updateCheck = updateNotifier({ pkg })
 
 async function action (source) {
   try {
@@ -59,6 +63,8 @@ async function init () {
     .command('config <Command> <Value>')
     .description('Save command configuration')
     .action(config)
+
+  if (updateCheck.update) updateCheck.notify()
 
   program.parse(process.argv)
 }
