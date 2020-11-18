@@ -8,6 +8,8 @@ const { version } = require('../package.json')
 const emojic = require('emojic')
 const fs = require('fs').promises
 const Image = require('../src/lib/image')
+const compress = require('../src/commands/compress')
+const config = require('../src/commands/config')
 
 async function action (source) {
   try {
@@ -47,6 +49,16 @@ async function init () {
     .command('info <Image/Directory>')
     .description('Get the information from an image')
     .action(action)
+
+  program
+    .command('compress <Image>')
+    .description('Compress an image')
+    .action(compress)
+
+  program
+    .command('config <Command> <Value>')
+    .description('Save command configuration')
+    .action(config)
 
   program.parse(process.argv)
 }
