@@ -4,16 +4,26 @@
   "description": "Clipix, an nice image editor for the terminal created in Nodejs ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard"
   },
   "keywords": [
     "cli",
     "sharp"
   ],
+  "bin": {
+    "clipix": "./bin/index.js"
+  },
   "author": "jquiceno <loncuster@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "commander": "^6.2.0",
-    "emojic": "^1.1.16"
+    "emojic": "^1.1.16",
+    "file-type": "^16.0.1",
+    "filesize": "^6.1.0",
+    "log-symbols": "^4.0.0",
+    "sharp": "^0.26.3"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
   }
 }
